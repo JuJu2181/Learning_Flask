@@ -1,0 +1,14 @@
+{% include 'new_templates/layout.html' %}
+
+
+
+{% block message%} 
+    <div style="text-align: center; margin-top:10%;">     
+        User says Multiple messages Using Layout:
+        {% for msg in messages %}
+            <p>{{msg}}</p>
+        {%endfor%}
+
+    </div>
+{% endblock %}
+ 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static',filename='FrodoBaggins.png') }}" type="image/x-icon">
+    <title>Frodo Baggins</title>
+</head>
+
+<body>
+    <!--Hey! This is the original version
+        of Simple CSS Waves-->
+
+    <div class="header">
+
+        <div class="box">
+            <img src="{{ url_for('static',filename='FrodoBaggins.png') }}" class="image" alt="Frodo Baggins">
+            <h1>Frodo Baggins</h1>
+            <h3><em>"I will take the Ring, though I do not know the way."</em></h3>
+        </div>
+    </div>
+    <!--Header ends-->
+    <!--About Me starts-->
+    <div class="box" style="margin: 50 100 10 100">
+        <h1 style="text-align: center;">About Me</h1>
+        <h4>Frodo Baggins, son of Drogo Baggins, was a hobbit of the Shire in the late Third Age. He was, and still is, Tolkien's most renowned character for his leading role in the Quest of the Ring, in which he bore the One Ring to Mount Doom, where it
+            was destroyed. He was a Ring-bearer, best friend to his gardener, Samwise Gamgee, and one of the three hobbits who sailed from Middle-earth to the Uttermost West at the end of the Third Age.</h4>
+        <h4>
+            Frodo, as described by Gandalf, was "taller than some and fairer than most, (with) a cleft in his chin: perky chap with a bright eye." (The Fellowship of the Ring, Chapter 10, "Strider") He was a shy, young hobbit with thick, curly brown hair like most
+            other hobbits, and had lighter-than-usual skin due to his Fallohide ancestry through his Brandybuck mother. He could be described as fairly good looking for a hobbit. Frodo is described as appearing thirty-three, even when he is fifty, due
+            to the influence of the Ring. Bilbo and Frodo shared a common birthday on September 22, but Bilbo was 78 years Frodo's senior. At the opening of The Fellowship of the Ring, Frodo and Bilbo were celebrating their thirty-third and eleventy-first
+            (111th) birthdays, respectively. Frodo, like Bilbo, was considered by many others in Hobbiton to be a little odd. His curiosity of the outside world, fascination with Elves and faraway places (like those to which Bilbo traveled in The Hobbit)
+            did not fit the general content personality of most Hobbits. This curiosity was also attributed to his Took ancestry. He was very kind and compassionate, pitying Gollum and allowing him to guide him and Sam to Mordor despite Sam's distrust
+            of the creature. This act of kindness later proved to be a factor in the quest's success in destroying the Ring. The influence of the Ring and the wound by the Morgul-Blade seems combined to have given him the ability to see into the spirit
+            world, for instance he sees faraway events in his dreams on several occasions. He also can see the ring of power worn by Galadriel and he seems to be able to sense danger.
+        </h4>
+    </div>
+    <!--Content starts-->
+    <div class="content">
+        <h3 style="text-align: center;">Share Your Contact</h4>
+            <form action="/" method="post">
+                <input type="text" placeholder="Your Name" name="name">
+                <input type="text" placeholder="Email" name="email">
+                <input type="text" placeholder="Phone Number" name="phone">
+                <input type="submit" value="Submit">
+            </form>
+    </div>
+    <div class="content">
+
+        <p>Frodo Baggins | 2021 </p>
+    </div>
+    <!--Content ends-->
+</body>
+
+</html>

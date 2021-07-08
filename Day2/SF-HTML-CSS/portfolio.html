@@ -1,0 +1,195 @@
+<html>
+    <head>
+        <title>Frodo Baggins</title>
+        <link rel="icon" href="FrodoBaggins3.png" type="image/x-icon">
+        <style>
+            @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+            body {
+            margin: 0;
+            }
+
+            h1 {
+            font-family: "Lato", sans-serif;
+            font-weight: 300;
+            letter-spacing: 2px;
+            font-size: 48px;
+            }
+            h4 {
+            font-family: "Lato", sans-serif;
+            font-weight: 100;
+            font-size: 20px;
+            text-align: justify;
+            }
+            p {
+            font-family: "Lato", sans-serif;
+            letter-spacing: 1px;
+            font-size: 14px;
+            color: #333333;
+            }
+            .box{
+                padding: 50 50 50 50;
+            }
+
+            .header {
+            position: relative;
+            text-align: center;
+            background: linear-gradient(
+                60deg,
+                rgba(84, 58, 183, 1) 0%,
+                rgba(0, 172, 193, 1) 100%
+            );
+            color: white;
+            }
+            .logo {
+            width: 50px;
+            fill: white;
+            padding-right: 15px;
+            display: inline-block;
+            vertical-align: middle;
+            }
+
+            .inner-header {
+            height: 65vh;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            }
+
+            .flex {
+            /*Flexbox for containers*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            }
+
+            .content {
+            position: relative;
+            height: 20vh;
+            text-align: center;
+            background-color: white;
+            }
+
+            .image{
+                border-radius: 50%;
+                max-width: 100%;
+                max-height: 100%;
+                width: 250px;
+                height: 250px
+            }
+
+            /* Animation */
+            .waves {
+            position: relative;
+            width: 100%;
+            height: 15vh;
+            margin-bottom: -7px;
+            min-height: 100px;
+            max-height: 150px;
+            }
+
+            .parallax > use {
+            animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+            }
+            .parallax > use:nth-child(1) {
+            animation-delay: -2s;
+            animation-duration: 7s;
+            }
+            .parallax > use:nth-child(2) {
+            animation-delay: -3s;
+            animation-duration: 10s;
+            }
+            .parallax > use:nth-child(3) {
+            animation-delay: -4s;
+            animation-duration: 13s;
+            }
+            .parallax > use:nth-child(4) {
+            animation-delay: -5s;
+            animation-duration: 20s;
+            }
+            @keyframes move-forever {
+            0% {
+                transform: translate3d(-90px, 0, 0);
+            }
+            100% {
+                transform: translate3d(85px, 0, 0);
+            }
+            }
+            /*Shrinking for mobile*/
+            @media (max-width: 768px) {
+            .waves {
+                height: 40px;
+                min-height: 40px;
+            }
+            .content {
+                height: 30vh;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--Hey! This is the original version
+        of Simple CSS Waves-->
+        
+        <div class="header">
+        
+           <div class="box">
+               <img src="FrodoBaggins3.png" class="image" alt="Frodo Baggins">
+                <h1>Frodo Baggins</h1>
+                <h3><em>"I will take the Ring, though I do not know the way."</em></h3>
+           </div>
+           
+            <!--Waves Container-->
+            <div>
+                <svg class="waves" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                    </defs>
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                    </g>
+                </svg>
+            </div>
+            <!--Waves end-->
+        </div>
+        <!--Header ends-->
+        <!--About Me starts-->
+        <div class="box" style="margin: 50 100 10 100">
+            <h1 style="text-align: center;">About Me</h1>
+            <h4>Frodo Baggins, son of Drogo Baggins, was a hobbit of the Shire in the late Third Age. He was, and still is, Tolkien's
+            most renowned character for his leading role in the Quest of the Ring, in which he bore the One Ring to Mount Doom,
+            where it was destroyed. He was a Ring-bearer, best friend to his gardener, Samwise Gamgee, and one of the three hobbits
+            who sailed from Middle-earth to the Uttermost West at the end of the Third Age.</h4>
+            <h4>
+                Frodo, as described by Gandalf, was "taller than some and fairer than most, (with) a cleft in his chin: perky chap with
+                a bright eye." (The Fellowship of the Ring, Chapter 10, "Strider") He was a shy, young hobbit with thick, curly brown
+                hair like most other hobbits, and had lighter-than-usual skin due to his Fallohide ancestry through his Brandybuck
+                mother. He could be described as fairly good looking for a hobbit. Frodo is described as appearing thirty-three, even
+                when he is fifty, due to the influence of the Ring. Bilbo and Frodo shared a common birthday on September 22, but Bilbo
+                was 78 years Frodo's senior. At the opening of The Fellowship of the Ring, Frodo and Bilbo were celebrating their
+                thirty-third and eleventy-first (111th) birthdays, respectively. Frodo, like Bilbo, was considered by many others in
+                Hobbiton to be a little odd. His curiosity of the outside world, fascination with Elves and faraway places (like those
+                to which Bilbo traveled in The Hobbit) did not fit the general content personality of most Hobbits. This curiosity was
+                also attributed to his Took ancestry. He was very kind and compassionate, pitying Gollum and allowing him to guide him
+                and Sam to Mordor despite Sam's distrust of the creature. This act of kindness later proved to be a factor in the
+                quest's success in destroying the Ring. The influence of the Ring and the wound by the Morgul-Blade seems combined to
+                have given him the ability to see into the spirit world, for instance he sees faraway events in his dreams on several
+                occasions. He also can see the ring of power worn by Galadriel and he seems to be able to sense danger.
+            </h4>
+        </div>
+        <!--Content starts-->
+        <div class="content flex">
+            
+            <p>Frodo Baggins | 2021 </p>
+        </div>
+        <!--Content ends-->
+    </body>
+</html>
